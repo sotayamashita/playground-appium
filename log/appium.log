@@ -1,0 +1,156 @@
+➜ appium                                                                                                                                                                                   13:21:58
+[Appium] Welcome to Appium v2.0.0-rc.5
+[Appium] Attempting to load driver xcuitest...
+[debug] [Appium] Requiring driver at /Users/{username}/.appium/node_modules/appium-xcuitest-driver
+[Appium] Appium REST http interface listener started on http://0.0.0.0:4723
+[Appium] You can provide the following URLS in your client code to connect to this server:
+[Appium] 	http://127.0.0.1:4723/ (only accessible from the same host)
+[Appium] 	http://192.168.1.16:4723/
+[Appium] Available drivers:
+[Appium]   - xcuitest@4.32.14 (automationName 'XCUITest')
+[Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[HTTP] --> POST /session
+[HTTP] {"capabilities":{"alwaysMatch":{"platformName":"iOS","appium:options":{"automationName":"XCUITest","app":"./playground-ios-test-automation.app","deviceName":"iPhone 14","noReset":false}},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"iOS","appium:options":{"automationName":"XCUITest","app":"./playground-ios-test-automation.app","deviceName":"iPhone 14","noReset":false}}}
+[debug] [AppiumDriver@fbf0] Calling AppiumDriver.createSession() with args: [{"platformName":"iOS","appium:options":{"automationName":"XCUITest","app":"./playground-ios-test-automation.app","deviceName":"iPhone 14","noReset":false}},null,{"alwaysMatch":{"platformName":"iOS","appium:options":{"automationName":"XCUITest","app":"./playground-ios-test-automation.app","deviceName":"iPhone 14","noReset":false}},"firstMatch":[{}]}]
+[debug] [AppiumDriver@fbf0] Event 'newSessionRequested' logged at 1688790129321 (13:22:09 GMT+0900 (Japan Standard Time))
+[debug] [BaseDriver] Found appium:options capability present; will promote items inside to caps
+[Appium] Attempting to find matching driver for automationName 'XCUITest' and platformName 'iOS'
+[Appium] The 'xcuitest' driver was installed and matched caps.
+[Appium] Will require it at /Users/{username}/.appium/node_modules/appium-xcuitest-driver
+[debug] [Appium] Requiring driver at /Users/{username}/.appium/node_modules/appium-xcuitest-driver
+[AppiumDriver@fbf0] Appium v2.0.0-rc.5 creating new XCUITestDriver (v4.32.14) session
+[AppiumDriver@fbf0] Checking BaseDriver versions for Appium and XCUITestDriver
+[AppiumDriver@fbf0] Appium's BaseDriver version is 9.3.15
+[AppiumDriver@fbf0] XCUITestDriver's BaseDriver version is 9.3.15
+[debug] [XCUITestDriver@e4ed] Creating session with W3C capabilities: {
+[debug] [XCUITestDriver@e4ed]   "alwaysMatch": {
+[debug] [XCUITestDriver@e4ed]     "platformName": "iOS",
+[debug] [XCUITestDriver@e4ed]     "appium:automationName": "XCUITest",
+[debug] [XCUITestDriver@e4ed]     "appium:app": "./playground-ios-test-automation.app",
+[debug] [XCUITestDriver@e4ed]     "appium:deviceName": "iPhone 14",
+[debug] [XCUITestDriver@e4ed]     "appium:noReset": false
+[debug] [XCUITestDriver@e4ed]   },
+[debug] [XCUITestDriver@e4ed]   "firstMatch": [
+[debug] [XCUITestDriver@e4ed]     {}
+[debug] [XCUITestDriver@e4ed]   ]
+[debug] [XCUITestDriver@e4ed] }
+[XCUITestDriver@e4ed] 'platformVersion' capability ('undefined') is not a valid version number. Consider fixing it or be ready to experience an inconsistent driver behavior.
+[XCUITestDriver@e4ed (38f86bbf)] Session created with session id: 38f86bbf-1aba-45df-a80b-792266ef3322
+[debug] [XCUITest] Current user: '{username}'
+[XCUITestDriver@e4ed (38f86bbf)] iOS SDK Version set to '16.4'
+[XCUITestDriver@e4ed (38f86bbf)] No platformVersion specified. Using the latest version Xcode supports: '16.4'. This may cause problems if a simulator does not exist for this platform version.
+[debug] [XCUITest] Looking for an existing Simulator with platformName: iOS, platformVersion: 16.4, deviceName: iPhone 14
+[iOSSim] Constructing iOS simulator for Xcode version 14.3.1 with udid '7F5FFF68-309B-4AF2-B383-78A231B3F7E2'
+[XCUITestDriver@e4ed (38f86bbf)] Determining device to run tests on: udid: '7F5FFF68-309B-4AF2-B383-78A231B3F7E2', real device: false
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'xcodeDetailsRetrieved' logged at 1688790129538 (13:22:09 GMT+0900 (Japan Standard Time))
+[BaseDriver] Using local app './playground-ios-test-automation.app'
+[BaseDriver] The current application path './playground-ios-test-automation.app' is not absolute and has been rewritten to '/Users/{username}/Desktop/playground-appium/playground-ios-test-automation.app'. Consider using absolute paths rather than relative
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'appConfigured' logged at 1688790129539 (13:22:09 GMT+0900 (Japan Standard Time))
+[debug] [XCUITest] Checking whether app '/Users/{username}/Desktop/playground-appium/playground-ios-test-automation.app' is actually present on file system
+[debug] [XCUITest] App is present
+[debug] [XCUITest] Getting bundle ID from app '/Users/{username}/Desktop/playground-appium/playground-ios-test-automation.app': 'com.{username}.playground-ios-test-automation'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'resetStarted' logged at 1688790129540 (13:22:09 GMT+0900 (Japan Standard Time))
+[debug] [simctl] Error running 'terminate': An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device returned an error for the requested operation.
+found nothing to terminate
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+	The operation couldn’t be completed. found nothing to terminate
+	found nothing to terminate
+[XCUITest] Reset: failed to terminate Simulator application with id "com.{username}.playground-ios-test-automation"
+[XCUITest] Not scrubbing third party app in anticipation of uninstall
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'resetComplete' logged at 1688790129621 (13:22:09 GMT+0900 (Japan Standard Time))
+[XCUITestDriver@e4ed (38f86bbf)] Using WDA path: '/Users/{username}/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'
+[XCUITestDriver@e4ed (38f86bbf)] Using WDA agent: '/Users/{username}/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+[debug] [IOSSimulatorLog] Starting log capture for iOS Simulator with udid '7F5FFF68-309B-4AF2-B383-78A231B3F7E2' using simctl
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'logCaptureStarted' logged at 1688790129824 (13:22:09 GMT+0900 (Japan Standard Time))
+[XCUITestDriver@e4ed (38f86bbf)] Setting up simulator
+[debug] [iOSSim] Setting preferences of 7F5FFF68-309B-4AF2-B383-78A231B3F7E2 Simulator to {"ConnectHardwareKeyboard":false}
+[debug] [iOSSim] Setting common Simulator preferences to {"RotateWindowWhenSignaledByGuest":true,"StartLastDeviceOnLaunch":false,"DetachOnWindowClose":false,"AttachBootedOnStart":true,"ConnectHardwareKeyboard":false,"PasteboardAutomaticSync":false}
+[debug] [iOSSim] Updated 7F5FFF68-309B-4AF2-B383-78A231B3F7E2 Simulator preferences at '/Users/{username}/Library/Preferences/com.apple.iphonesimulator.plist' with {"RotateWindowWhenSignaledByGuest":true,"StartLastDeviceOnLaunch":false,"DetachOnWindowClose":false,"AttachBootedOnStart":true,"ConnectHardwareKeyboard":false,"PasteboardAutomaticSync":false,"DevicePreferences":{"7F5FFF68-309B-4AF2-B383-78A231B3F7E2":{"SimulatorExternalDisplay":2114,"ConnectHardwareKeyboard":false,"ChromeTint":"","SimulatorWindowGeometry":{"B4BD30A3-55D3-4846-9EAB-DBF3D304224C":{"WindowCenter":"{852, 808}","WindowScale":1}},"SimulatorWindowOrientation":"Portrait","SimulatorWindowRotationAngle":0}}}
+[debug] [iOSSim] Got Simulator UI client PID: 54653
+[iOSSim] Both Simulator with UDID '7F5FFF68-309B-4AF2-B383-78A231B3F7E2' and the UI client are currently running
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'simStarted' logged at 1688790130258 (13:22:10 GMT+0900 (Japan Standard Time))
+[debug] [XCUITest] Verifying application platform
+[debug] [XCUITest] CFBundleSupportedPlatforms: ["iPhoneSimulator"]
+[XCUITestDriver@e4ed (38f86bbf)] App 'com.{username}.playground-ios-test-automation' is already installed
+[debug] [XCUITest] Reset requested. Removing app with id 'com.{username}.playground-ios-test-automation' from the device
+[debug] [XCUITest] Installing '/Users/{username}/Desktop/playground-appium/playground-ios-test-automation.app' on Simulator with UUID '7F5FFF68-309B-4AF2-B383-78A231B3F7E2'...
+[debug] [XCUITest] The app has been installed successfully.
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'appInstalled' logged at 1688790130893 (13:22:10 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@e4ed (38f86bbf)] No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+[DevCon Factory] Requesting connection for device 7F5FFF68-309B-4AF2-B383-78A231B3F7E2 on local port 8100
+[debug] [DevCon Factory] Cached connections count: 0
+[DevCon Factory] Successfully requested the connection for 7F5FFF68-309B-4AF2-B383-78A231B3F7E2:8100
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+[debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+[debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[debug] [WD Proxy] Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":28,"name":"iOS","sdkVersion":"16.4","version":"16.4"},"ios":{"simulatorVersion":"16.4","ip":"192.168.1.16"},"ready":true,"build":{"upgradedAt":"1688789734022","time":"Jul  8 2023 13:16:09","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Upgrade timestamp of the currently bundled WDA: 1688789734022
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Upgrade timestamp of the WDA on the device: 1688789734022
+[XCUITestDriver@e4ed (38f86bbf)] Will reuse previously cached WDA instance at 'http://127.0.0.1:8100/' with 'com.facebook.WebDriverAgentRunner'. Set the wdaLocalPort capability to a value different from 8100 if this is an undesired behavior.
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Trying to start WebDriverAgent 2 times with 10000ms interval
+[debug] [XCUITestDriver@e4ed (38f86bbf)] These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'wdaStartAttempted' logged at 1688790130992 (13:22:10 GMT+0900 (Japan Standard Time))
+[XCUITestDriver@e4ed (38f86bbf)] Using provided WebdriverAgent at 'http://127.0.0.1:8100/'
+[debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+[debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[debug] [WD Proxy] Got response with status 200: {"value":{"message":"WebDriverAgent is ready to accept commands","state":"success","os":{"testmanagerdVersion":28,"name":"iOS","sdkVersion":"16.4","version":"16.4"},"ios":{"simulatorVersion":"16.4","ip":"192.168.1.16"},"ready":true,"build":{"upgradedAt":"1688789734022","time":"Jul  8 2023 13:16:09","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"}},"sessionId":null}
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'wdaSessionAttempted' logged at 1688790130994 (13:22:10 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Sending createSession command to WDA
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Matched '/session' to command name 'createSession'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"bundleId":"com.{username}.playground-ios-test-automation","arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true,"shouldTerminateApp":true,"forceAppLaunch":true,"useNativeCachingStrategy":true,"forceSimulatorSoftwareKeyboardPresence":true}],"alwaysMatch":{}}}
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Parsed BUILD_DIR configuration value: '/Users/{username}/Library/Developer/Xcode/DerivedData/WebDriverAgent-blgqfjqymvfjvzfuizqwmraupsdq/Build/Products'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Got derived data root: '/Users/{username}/Library/Developer/Xcode/DerivedData/WebDriverAgent-blgqfjqymvfjvzfuizqwmraupsdq'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Got response with status 200: {"value":{"sessionId":"0B44211B-87F6-4CEF-8341-6107A256CB3F","capabilities":{"device":"iphone","browserName":"playground-ios-test-automation","sdkVersion":"16.4","CFBundleIdentifier":"com.{username}.playground-ios-test-automation"}},"sessionId":"0B44211B-87F6-4CEF-8341-6107A256CB3F"}
+[XCUITestDriver@e4ed (38f86bbf)] Determined the downstream protocol as 'W3C'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'wdaSessionStarted' logged at 1688790132467 (13:22:12 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Event 'wdaStarted' logged at 1688790132467 (13:22:12 GMT+0900 (Japan Standard Time))
+[debug] [BaseDriver] The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+[debug] [BaseDriver] The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+[AppiumDriver@fbf0] New XCUITestDriver session created successfully, session 38f86bbf-1aba-45df-a80b-792266ef3322 added to master session list
+[debug] [AppiumDriver@fbf0] Event 'newSessionStarted' logged at 1688790132468 (13:22:12 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Cached the protocol value 'W3C' for the new session 38f86bbf-1aba-45df-a80b-792266ef3322
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","automationName":"XCUITest","app":"./playground-ios-test-automation.app","deviceName":"iPhone 14","noReset":false,"udid":"7F5FFF68-309B-4AF2-B383-78A231B3F7E2"}}
+[HTTP] <-- POST /session 200 3151 ms - 456
+[HTTP]
+[HTTP] --> POST /session/38f86bbf-1aba-45df-a80b-792266ef3322/element
+[HTTP] {"using":"accessibility id","value":"Button"}
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Calling AppiumDriver.findElement() with args: ["accessibility id","Button","38f86bbf-1aba-45df-a80b-792266ef3322"]
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Executing command 'findElement'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Waiting up to 0 ms for condition
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Matched '/element' to command name 'findElement'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/0B44211B-87F6-4CEF-8341-6107A256CB3F/element] with body: {"using":"accessibility id","value":"Button"}
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Got response with status 200: {"value":{"ELEMENT":"0A000000-0000-0000-E5EF-000000000000","element-6066-11e4-a52e-4f735466cecf":"0A000000-0000-0000-E5EF-000000000000"},"sessionId":"0B44211B-87F6-4CEF-8341-6107A256CB3F"}
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"0A000000-0000-0000-E5EF-000000000000","ELEMENT":"0A000000-0000-0000-E5EF-000000000000"}
+[HTTP] <-- POST /session/38f86bbf-1aba-45df-a80b-792266ef3322/element 200 29 ms - 137
+[HTTP]
+[HTTP] --> POST /session/38f86bbf-1aba-45df-a80b-792266ef3322/element/0A000000-0000-0000-E5EF-000000000000/click
+[HTTP] {}
+[XCUITestDriver@e4ed (38f86bbf)] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Executing command 'proxyReqRes'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Matched '/session/38f86bbf-1aba-45df-a80b-792266ef3322/element/0A000000-0000-0000-E5EF-000000000000/click' to command name 'click'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Proxying [POST /session/38f86bbf-1aba-45df-a80b-792266ef3322/element/0A000000-0000-0000-E5EF-000000000000/click] to [POST http://127.0.0.1:8100/session/0B44211B-87F6-4CEF-8341-6107A256CB3F/element/0A000000-0000-0000-E5EF-000000000000/click] with body: {}
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Got response with status 200: {"value":null,"sessionId":"0B44211B-87F6-4CEF-8341-6107A256CB3F"}
+[XCUITestDriver@e4ed (38f86bbf)] Replacing sessionId 0B44211B-87F6-4CEF-8341-6107A256CB3F with 38f86bbf-1aba-45df-a80b-792266ef3322
+[HTTP] <-- POST /session/38f86bbf-1aba-45df-a80b-792266ef3322/element/0A000000-0000-0000-E5EF-000000000000/click 200 318 ms - 65
+[HTTP]
+[HTTP] --> DELETE /session/38f86bbf-1aba-45df-a80b-792266ef3322
+[HTTP] {}
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Calling AppiumDriver.deleteSession() with args: ["38f86bbf-1aba-45df-a80b-792266ef3322"]
+[debug] [AppiumDriver@fbf0] Event 'quitSessionRequested' logged at 1688790133848 (13:22:13 GMT+0900 (Japan Standard Time))
+[AppiumDriver@fbf0] Removing session 38f86bbf-1aba-45df-a80b-792266ef3322 from our master session list
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Matched '/session/38f86bbf-1aba-45df-a80b-792266ef3322' to command name 'deleteSession'
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Proxying [DELETE /session/38f86bbf-1aba-45df-a80b-792266ef3322] to [DELETE http://127.0.0.1:8100/session/0B44211B-87F6-4CEF-8341-6107A256CB3F] with no body
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Got response with status 200: {"value":null,"sessionId":null}
+[DevCon Factory] Releasing connections for 7F5FFF68-309B-4AF2-B383-78A231B3F7E2 device on any port number
+[DevCon Factory] Found cached connections to release: ["7F5FFF68-309B-4AF2-B383-78A231B3F7E2:8100"]
+[debug] [DevCon Factory] Cached connections count: 0
+[debug] [XCUITestDriver@e4ed (38f86bbf)] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [IOSSimulatorLog] Stopping iOS log capture
+[debug] [AppiumDriver@fbf0] Event 'quitSessionFinished' logged at 1688790134913 (13:22:14 GMT+0900 (Japan Standard Time))
+[debug] [AppiumDriver@fbf0] Received response: null
+[debug] [AppiumDriver@fbf0] But deleting session, so not returning
+[debug] [AppiumDriver@fbf0] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /session/38f86bbf-1aba-45df-a80b-792266ef3322 200 1066 ms - 14
+[HTTP]

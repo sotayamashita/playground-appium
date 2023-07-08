@@ -1,0 +1,31 @@
+➜ node test.js
+2023-07-08T04:22:09.261Z INFO webdriver: Initiate new session using the WebDriver protocol
+2023-07-08T04:22:09.304Z INFO webdriver: [POST] http://localhost:4723/session
+2023-07-08T04:22:09.304Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { platformName: 'iOS', 'appium:options': [Object] },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    platformName: 'iOS',
+    'appium:options': {
+      automationName: 'XCUITest',
+      app: './playground-ios-test-automation.app',
+      deviceName: 'iPhone 14',
+      noReset: false
+    }
+  }
+}
+2023-07-08T04:22:12.480Z INFO webdriver: COMMAND findElement("accessibility id", "Button")
+2023-07-08T04:22:12.481Z INFO webdriver: [POST] http://localhost:4723/session/38f86bbf-1aba-45df-a80b-792266ef3322/element
+2023-07-08T04:22:12.481Z INFO webdriver: DATA { using: 'accessibility id', value: 'Button' }
+2023-07-08T04:22:12.513Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0A000000-0000-0000-E5EF-000000000000',
+  ELEMENT: '0A000000-0000-0000-E5EF-000000000000'
+}
+2023-07-08T04:22:12.517Z INFO webdriver: COMMAND elementClick("0A000000-0000-0000-E5EF-000000000000")
+2023-07-08T04:22:12.517Z INFO webdriver: [POST] http://localhost:4723/session/38f86bbf-1aba-45df-a80b-792266ef3322/element/0A000000-0000-0000-E5EF-000000000000/click
+2023-07-08T04:22:12.838Z INFO webdriver: RESULT null
+2023-07-08T04:22:13.842Z INFO webdriver: COMMAND deleteSession()
+2023-07-08T04:22:13.843Z INFO webdriver: [DELETE] http://localhost:4723/session/38f86bbf-1aba-45df-a80b-792266ef3322
+2023-07-08T04:22:14.915Z INFO webdriver: RESULT null
